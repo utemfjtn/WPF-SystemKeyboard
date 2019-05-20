@@ -36,12 +36,10 @@ namespace WPF.Product.UserControls.SystemKeyBoard
             if (this.btn_caps.IsChecked)
             {
                 this.btn_caps.Content = "Upper";
-                this.btn_caps.Background = Brushes.Green;
             }
             else
             {
                 this.btn_caps.Content = "Lower";
-                this.btn_caps.Background = Brushes.White;
             }
         }
 

@@ -61,7 +61,6 @@ namespace WPF.Product.UserControls.SystemKeyBoard
 
             Instance.Show();
 
-
         }
 
         public static void HideDefault()
