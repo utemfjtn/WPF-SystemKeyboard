@@ -11,7 +11,7 @@
     <Window.Resources>
         <!--消息弹窗加载 由下到上 +震动-->
         <Storyboard x:Key="Story_Load">
-            <DoubleAnimation From="300" To="0" Duration="0:0:0.5" BeginTime="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+            <DoubleAnimation From="300" To="0" Duration="0:0:0.1" BeginTime="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
             </DoubleAnimation>
         </Storyboard>
     </Window.Resources>
