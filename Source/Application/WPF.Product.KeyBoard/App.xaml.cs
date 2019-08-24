@@ -52,8 +52,19 @@ namespace WPF.Product.KeyBoard
                 return;
             }
 
-
-            KeyBoardWindow.ShowDefault(()=> Environment.Exit(0));
+            if(e.Args != null && e.Args.Length > 0 && e.Args[0].Length > 0)
+            {
+                if(e.Args[0].ToUpper().Contains("KEYBOARD"))
+                {
+                    KeyBoardWindow.ShowDefault(() => Environment.Exit(0));  //Defalut
+                }
+                else if (e.Args[0].ToUpper().Contains("NUMBER"))
+                {
+                    InputNumWindow.ShowDefault(() => Environment.Exit(0));  //Defalut
+                }
+            }
+            else
+                KeyBoardWindow.ShowDefault(()=> Environment.Exit(0));  //Defalut
         }
     }
 }

@@ -30,11 +30,12 @@ namespace WPF.Product.UserControls.SystemKeyBoard
 
         public static InputNumWindow Instance = new InputNumWindow();
 
-        public static void ShowDefault()
+        Action _closeClick;
+        public static void ShowDefault(Action closeClick = null)
         {
+            Instance._closeClick = closeClick;
             Instance.Show();
         }
-
         public static void HideDefault()
         {
             Instance.Hide();

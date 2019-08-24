@@ -53,11 +53,11 @@ namespace WPF.Product.UserControls.SystemKeyBoard
 
             string content = button.Content.ToString();
 
-            if (content == "确定")
+            if (content == "确定" || content == "Confirm")
             {
                 this.OnSumitClick();
             }
-            else if (content == "取消")
+            else if (content == "取消" || content == "Cancel")
             {
                 this.OnCancelClick();
             }
